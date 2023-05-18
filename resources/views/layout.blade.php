@@ -227,7 +227,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center">&copy; 2017 <a href="#">Blog, </a> Designed with <i
+                    <div class="text-center">&copy; {{ date('Y') }} <a href="#">Blog, </a> Designed with <i
                             class="fa fa-heart"></i> by <a href="#">Marlin</a>
                     </div>
                 </div>
