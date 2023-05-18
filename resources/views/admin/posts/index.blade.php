@@ -55,12 +55,13 @@
                             <img src="{{ $post->getImage() }}" alt="" width="100">
                         </td>
                         <td><a href="{{ route('posts.edit', $post->id) }}" class="fa fa-pencil"></a>
+                            {{ Form::close() }}
+
                             {{ Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) }}
                             <button onclick="return confirm('А вы уверены?')" type="submit" class="delete">
                                 <i class="fa fa-remove"></i>
                             </button>
-
-                            {{Form::close()}}
+                            {{ Form::close() }}
 
                         </td>
                     </tr>
@@ -71,7 +72,7 @@
             <!-- /.box-body -->
         </div>
         <!-- /.box -->
-        {{ Form::close() }}
+
     </section>
     <!-- /.content -->
 </div>

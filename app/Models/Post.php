@@ -164,6 +164,13 @@ class Post extends Model
         $this->attributes['date'] = $date;
     }
 
+    public function getDateAttribute($value)
+    {
+        $date = Carbon::createFromFormat('Y-m-d', $value)->format('d/m/y');
+
+        return $date;
+    }
+
     public function getCategoryTitle()
     {
         return ($this->category != null)
@@ -173,7 +180,7 @@ class Post extends Model
 
     public function getTagsTitles()
     {
-        
+
         return (!$this->tags->isEmpty())
             ? implode(', ', $this->tags->pluck('title')->all())
             : 'Нет тегов';
