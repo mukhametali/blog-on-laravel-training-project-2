@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
         $posts = Post::paginate(2);
 
-        return view('pages.index', compact('posts'));
+        return view('pages.index')->with('posts', $posts);
     }
 
     public function show($slug)
