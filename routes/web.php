@@ -23,6 +23,7 @@ Route::group(['middleware' => 'auth'], function (){
     Route::get('/profile','ProfileController@index');
     Route::post('/profile','ProfileController@store');
     Route::get('/logout','AuthController@logout');
+    Route::post('/comment','CommentsController@store');
 });
 
 Route::group(['middleware' => 'guest'], function (){
@@ -40,6 +41,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'admi
     Route::resource('/tags','TagsController');
     Route::resource('/users','UsersController');
     Route::resource('/posts','PostsController');
+    Route::get('/comments', 'CommentsController@index');
+    Route::get('/comments/toggle/{id}', 'CommentsController@toggle');
+    Route::delete('/comment/{id}/destroy', 'CommentsController@destroy')->name('comments.destroy');
 });
 
 
