@@ -126,11 +126,11 @@
                     <div class="address">
                         <h4 class="text-uppercase">contact Info</h4>
 
-                        <p> 142/5 BC Street, ES, VSA</p>
+                        <p> Almaty</p>
 
-                        <p> Phone: +123 456 78900</p>
+                        <p> Phone: +7 778 807 28 32 </p>
 
-                        <p>rahim@marlindev.ru</p>
+                        <p>m.kussaiynov1996@gmail.com</p>
                     </div>
                 </aside>
             </div>
@@ -232,7 +232,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">&copy; {{ date('Y') }} <a href="#">Blog, </a> Designed with <i
-                            class="fa fa-heart"></i> by <a href="#">Marlin</a>
+                            class="fa fa-heart"></i> by <a href="#">Mukhametali</a>
                     </div>
                 </div>
             </div>
